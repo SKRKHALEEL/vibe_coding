@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern User Portal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2><i class="fas fa-user-circle"></i> User Portal</h2>
+      <form id="userForm" onsubmit="return handleSubmit()">
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="text" id="name" placeholder="Full Name" required />
+        </div>
+        <div class="input-group">
+          <i class="fas fa-envelope"></i>
+          <input type="email" id="email" placeholder="Email" required />
+        </div>
+        <div class="input-group">
+          <i class="fas fa-phone"></i>
+          <input type="tel" id="phone" placeholder="Phone Number" required />
+        </div>
+        <div class="input-group">
+          <i class="fas fa-comment"></i>
+          <textarea id="message" placeholder="Your Message" rows="3" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="popup" class="popup hidden">
+        <p>✅ Submission Successful!</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
